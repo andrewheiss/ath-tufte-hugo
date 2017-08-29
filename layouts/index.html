@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+{{ partial "body_top.html" . }}
+
+    <div class="wrap">
+        <header>
+        I am a home page
+        </header>
+
+        {{ .Content }}
+
+        <footer>Footer stuff goes here.</footer>
+    </div>
+
+{{ partial "footer.html" . }}
+{{ partial "body_bottom.html" . }}
+
