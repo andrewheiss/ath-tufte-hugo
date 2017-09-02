@@ -1,0 +1,43 @@
+    <style type="text/css">
+        .wrap a, .wrap a:visited {
+            color: {{ .Site.Params.primaryColor }};
+        }
+
+        .wrap a:hover {
+            color: #ECAD49;
+        }
+
+        .wrap p > a {
+            color: {{ .Site.Params.primaryColor }};
+        }
+
+        article .sidenote-number:after, article .sidenote:before {
+            color: {{ .Site.Params.primaryColor }};
+        }
+
+        article .sidenote:before {
+            color: {{ .Site.Params.primaryColor }};
+        }
+
+        @media (max-width: 760px) {
+            label.margin-toggle:not(.sidenote-number) {
+                color: {{ .Site.Params.primaryColor }};
+            }
+        }
+
+        .contrast a, .contrast a:visited {
+            color: {{ .Site.Params.primaryColor }}; 
+        }
+
+        header > nav a {
+            color: {{ .Site.Params.primaryColor }};
+        }
+
+        .credits a {
+            color: {{ .Site.Params.primaryColor }};
+        }
+
+        .wrap .tag {
+            background: {{ .Site.Params.primaryColor }};
+        }
+    </style>
