@@ -1,5 +1,42 @@
-{{ .Hugo.Generator }}
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ .Site.Params.author }}">
+    {{- if .Description }}
+    <meta name="description" content=".Description">
+    {{- else }}
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{- end }}
+
+    <meta name="twitter:card" value="summary_large_image">
+    <meta name="twitter:site" content="{{ .Site.Params.meta.twitterSite }}">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:creator" content="{{ .Site.Params.meta.twitterCreator }}">
+    {{- if .Params.thumbnail }}
+    <meta name="twitter:image" content="{{ .Params.thumbnail }}">
+    {{- else }}
+    <meta name="twitter:image" content="{{ .Site.Params.thumbnail }}">
+    {{- end }}
+    {{- if .Description }}
+    <meta property="twitter:description" content="{{ .Description }}" />
+    {{- else }}
+    <meta property="twitter:description" content="{{ .Site.Params.description }}" />
+    {{- end }}
+
+    <meta property="og:site_name" content="{{ .Site.Params.courseNumber }}: {{ .Site.Title }}"/>
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="{{ .Site.Params.meta.fbAuthor }}" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    {{- if .Params.thumbnail }}
+    <meta name="og:image" content="{{ .Params.thumbnail }}">
+    {{- else }}
+    <meta name="og:image" content="{{ .Site.Params.thumbnail }}">
+    {{- end }}
+    {{- if .Description }}
+    <meta property="og:description" content="{{ .Description }}" />
+    {{- else }}
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+    {{- end }}
+
+    {{ .Hugo.Generator }}    
