@@ -13,15 +13,11 @@
 
         <ul class="footer-links">
             <li>
-            <a href="{{ .Site.Params.course.instructorURL }}"><i class="fa fa-user" aria-hidden="true"></i> {{ .Site.Params.course.instructor }}</a>
+            <a href="{{ .Site.Params.instructor.url }}"><i class="fa fa-user" aria-hidden="true"></i> {{ .Site.Params.instructor.name }}</a>
             </li>
 
             <li>
-            <a href="{{ .Site.Params.course.email }}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ .Site.Params.course.email }}</a>
-            </li>
-
-            <li>
-            <i class="fa fa-clock-o" aria-hidden="true"></i> {{ .Site.Params.course.time }}
+            <a href="mailto:{{ .Site.Params.instructor.email }}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ .Site.Params.instructor.email }}</a>
             </li>
 
             <li>
@@ -29,24 +25,30 @@
             </li>
 
             <li>
+            <i class="fa fa-clock-o" aria-hidden="true"></i> {{ .Site.Params.course.time }}
+            </li>
+
+            <li>
             <i class="fa fa-university" aria-hidden="true"></i> {{ .Site.Params.course.location }}
             </li>
 
             <li>
-            <a href="https://twitter.com/{{ .Site.Params.course.instructorTwitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/{{ .Site.Params.course.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </li>
 
             <li>
-            <a href="https://github.com/{{ .Site.Params.course.instructorGitHub }}"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://github.com/{{ .Site.Params.course.github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
             </li>
         </ul>
 
         <div class="credits">
         <span>all content licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</span><br><br>
 
-        <span>content © 2017 <a href="{{ .Site.Params.course.instructorURL }}">{{ .Site.Params.author | lower }}</a></span><br><br>
+        <span>content © 2017 <a href="{{ .Site.Params.instructor.url }}">{{ .Site.Params.author | lower }}</a></span><br><br>
 
-        <span>&ldquo;bar graph&rdquo; icon by <a href="https://thenounproject.com/r.severino/collection/data-visualisation-catalogue-icons/?i=115543">severino ribecca</a> from the <a href="https://thenounproject.com">noun project</a></span><br><br>
+        {{- if .Site.Params.credits }}
+        <span>{{ .Site.Params.credits | markdownify }}</span><br><br>
+        {{- end }}
 
         <span>this site created with the <a href="https://github.com/andrewheiss/ath-tufte-hugo">ath-tufte-hugo theme</a> in <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a href="https://gohugo.io/">hugo</a>.</span>
         </div>
