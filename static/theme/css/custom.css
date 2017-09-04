@@ -1,3 +1,17 @@
 .wrap li {
     line-height: inherit;
 }
+
+.course-info {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.25rem; 
+}
+
+.course-name {
+    font-weight: bold;
+}
+
+ul.footer-links {
+    margin-bottom: 1.25rem;
+}
