@@ -5,11 +5,11 @@
 .course-info {
     font-size: 1.2rem;
     text-align: center;
-    margin-bottom: 1.25rem; 
+    margin-bottom: 1.25rem;
 }
 
 .course-name {
-    font-weight: bold;
+    font-family: "ff-basic-gothic-sc-web-pro", sans-serif;
 }
 
 ul.footer-links {
