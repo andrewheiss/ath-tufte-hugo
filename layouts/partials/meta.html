@@ -17,9 +17,9 @@
     {{- end }}
     <meta name="twitter:creator" content="{{ .Site.Params.meta.twitterCreator }}">
     {{- if .Params.thumbnail }}
-    <meta name="twitter:image" content="{{ .Params.thumbnail }}">
+    <meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
     {{- else }}
-    <meta name="twitter:image" content="{{ .Site.Params.thumbnail }}">
+    <meta name="twitter:image" content="{{ .Site.Params.thumbnail | absURL }}">
     {{- end }}
     {{- if .Description }}
     <meta name="twitter:description" content="{{ .Description }}" />
@@ -37,9 +37,9 @@
     <meta property="article:author" content="{{ .Site.Params.meta.fbAuthor }}" />
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
     {{- if .Params.thumbnail }}
-    <meta name="og:image" content="{{ .Params.thumbnail }}">
+    <meta property="og:image" content="{{ .Params.thumbnail | absURL }}">
     {{- else }}
-    <meta name="og:image" content="{{ .Site.Params.thumbnail }}">
+    <meta property="og:image" content="{{ .Site.Params.thumbnail | absURL }}">
     {{- end }}
     {{- if .Description }}
     <meta property="og:description" content="{{ .Description }}" />
