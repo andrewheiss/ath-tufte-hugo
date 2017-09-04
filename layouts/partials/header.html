@@ -5,9 +5,9 @@
 <head>
     {{ partial "meta.html" . }}
     {{- if eq .URL "/" }}
-    <title>{{ .Site.Params.courseNumber }}: {{ .Site.Title }}</title>
+    <title>{{ .Site.Params.course.number }}: {{ .Site.Title }}</title>
     {{- else }}
-    <title>{{ .Title }} | {{ .Site.Params.courseNumber }}: {{ .Site.Title }}</title>
+    <title>{{ .Title }} | {{ .Site.Params.course.number }}: {{ .Site.Title }}</title>
     {{- end }}
     <link rel="canonical" href="{{ .Permalink }}">
     {{ partial "head_includes.html" . }}
