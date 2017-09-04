@@ -10,7 +10,11 @@
 
     <meta name="twitter:card" value="summary_large_image">
     <meta name="twitter:site" content="{{ .Site.Params.meta.twitterSite }}">
-    <meta name="twitter:title" content="{{ .Title }}">
+    {{- if eq .URL "/" }}
+    <meta name="twitter:title" content="{{ .Site.Params.courseNumber }}: {{ .Site.Title }}">
+    {{- else }}
+    <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Params.courseNumber }}: {{ .Site.Title }}">
+    {{- end }}
     <meta name="twitter:creator" content="{{ .Site.Params.meta.twitterCreator }}">
     {{- if .Params.thumbnail }}
     <meta name="twitter:image" content="{{ .Params.thumbnail }}">
@@ -18,13 +22,17 @@
     <meta name="twitter:image" content="{{ .Site.Params.thumbnail }}">
     {{- end }}
     {{- if .Description }}
-    <meta property="twitter:description" content="{{ .Description }}" />
+    <meta name="twitter:description" content="{{ .Description }}" />
     {{- else }}
-    <meta property="twitter:description" content="{{ .Site.Params.description }}" />
+    <meta name="twitter:description" content="{{ .Site.Params.description }}" />
     {{- end }}
 
-    <meta property="og:site_name" content="{{ .Site.Params.courseNumber }}: {{ .Site.Title }}"/>
-    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:site_name" content="{{ .Site.Params.courseNumber }}: {{ .Site.Params.courseNumber }}: {{ .Site.Title }}"/>
+    {{- if eq .URL "/" }}
+    <meta property="og:title" content="{{ .Site.Params.courseNumber }}: {{ .Site.Title }}">
+    {{- else }}
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Params.courseNumber }}: {{ .Site.Title }}">
+    {{- end }}
     <meta property="og:type" content="article" />
     <meta property="article:author" content="{{ .Site.Params.meta.fbAuthor }}" />
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
