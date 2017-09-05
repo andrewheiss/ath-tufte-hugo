@@ -21,6 +21,16 @@
     margin-bottom: 1.25rem;
 }
 
+.wrap .table th {
+    padding-left: 0.5em;
+}
+
+.wrap .table td {
+    line-height: 1.2rem;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
 .course-name {
     font-family: "ff-basic-gothic-sc-web-pro", sans-serif;
 }
