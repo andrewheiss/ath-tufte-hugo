@@ -362,11 +362,11 @@ article span.newthought {
   font-variant: small-caps;
   font-size: 1.2em;
   letter-spacing: 0.05rem; }
-article input.margin-toggle {
+input.margin-toggle {
   display: none; }
-article label.sidenote-number {
+label.sidenote-number {
   display: inline; }
-article label.margin-toggle:not(.sidenote-number) {
+label.margin-toggle:not(.sidenote-number) {
   display: none; }
 
 @media (max-width: 760px) {
