@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+{{ partial "body_top.html" . }}
+
+    <article class="group">
+    <h1>{{ .Title }}</h1>
+
+    <p class="page-date">Readings due before class on {{ .Date.Format "Monday, January 2, 2006" }}</p>
+    
+    {{ .Content }}
+
+    </article>
+
+{{ partial "footer.html" . }}
+{{ partial "body_bottom.html" . }}
