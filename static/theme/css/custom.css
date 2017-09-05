@@ -37,3 +37,38 @@ ul.footer-links {
 .fake-li {
     font-size: 1rem;
 }
+
+@media screen and (max-width: 760px) {
+    h1.websitetitle {
+        text-align: center;
+        line-height: 2.2rem;
+    }
+
+    header > nav h1 a {
+        padding-right: 0;
+        float: inherit;
+    }
+
+    header > nav.logo-wrap {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    header > nav.bottom-group {
+        text-align: center;
+    }
+
+    header > nav.bottom-group a {
+        float: inherit;
+    }
+
+    header > nav a.logo {
+        float: inherit;
+        padding-right: 0;
+        padding-top: 0; 
+    }
+
+    header > nav a img {
+        top: 0;
+    }
+}

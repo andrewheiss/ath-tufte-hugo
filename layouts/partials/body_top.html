@@ -1,8 +1,8 @@
 <body>
 <div class="wrap">
     <header>
-        <nav class="group">
-            <a href="/"><img src="{{ .Site.Params.logo.url | absURL }}" alt="{{ .Site.Params.logo.alt }}"></a>
+        <nav class="group logo-wrap">
+            <a href="/" class="logo"><img src="{{ .Site.Params.logo.url | absURL }}" alt="{{ .Site.Params.logo.alt }}"></a>
             <h1 class="websitetitle"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.course.number }}: {{ .Site.Title }}</a></h1>
         </nav>
         <nav class="bottom-group">
