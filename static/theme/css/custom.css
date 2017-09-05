@@ -60,6 +60,11 @@ ul.footer-links {
     font-size: 1rem;
 }
 
+.page-date {
+    font-style: italic;
+    margin-bottom: 2.5rem;
+}
+
 @media screen and (max-width: 760px) {
     h1.websitetitle {
         text-align: center;
