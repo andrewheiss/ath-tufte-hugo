@@ -1,3 +1,15 @@
+article .sidenote, article .marginnote {
+    margin-bottom: 0.3rem;
+}
+
+article li {
+    width: 100%;
+}
+
+article li .sidenote, article li .marginnote {
+    margin-right: -55.5%;
+}
+
 .wrap li {
     line-height: inherit;
 }
