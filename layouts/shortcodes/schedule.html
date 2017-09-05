@@ -1,0 +1,49 @@
+<table class="table" style="max-width:100%">
+    <thead>
+        <tr>
+            <th style="width:15%;text-align:right">Date</th>
+            <th style="width:55%;text-align:left">Topic</th>
+            <th style="width:10%;text-align:center">Reading</th>
+            <th style="width:10%;text-align:center">Assignment</th>
+            <th style="width:10%;text-align:center">Class</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+    {{- range .Site.Data.lessons }}
+        {{- range . }}
+        <tr>
+            <td align="right" style="text-align:right">{{ .date }}</td>
+            <td>{{ .title }}</td>
+
+            {{- if .reading }}
+            <td align="center" style="text-align:center"><a href="{{ .Site.baseurl }}/reading/{{ .reading }}/">
+                <i class="fa fa-book fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="text-align:center"><font color="f1f1f1">
+                <i class="fa fa-book fa-lg"></i></font></td>
+            {{- end }}
+
+            {{- if .assignment }}
+            <td align="center" style="text-align:center"><a href="{{ .Site.baseurl }}/assignment/{{ .assignment }}/">
+                <i class="fa fa-keyboard-o fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="text-align:center"><font color="f1f1f1">
+                <i class="fa fa-keyboard-o fa-lg"></i></font></td>
+            {{- end }}
+
+            {{- if .class }}
+            <td align="center" style="text-align:center"><a href="{{ .Site.baseurl }}/class/{{ .class }}/">
+                <i class="fa fa-university fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="text-align:center"><font color="f1f1f1">
+                <i class="fa fa-university fa-lg"></i></font></td>
+            {{- end }}
+        </tr>
+        {{- end }}
+    {{- end }}
+
+    </tbody>
+
+</table>
