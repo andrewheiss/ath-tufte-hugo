@@ -2,6 +2,19 @@
     line-height: inherit;
 }
 
+.wrap h1 {
+    font-size: 2rem;
+}
+
+.wrap h2 {
+    margin-top: 3rem;
+    font-size: 1.75rem;
+}
+
+.wrap h3 {
+    font-size: 1.35rem;
+}
+
 .course-info {
     font-size: 1.2rem;
     text-align: center;
