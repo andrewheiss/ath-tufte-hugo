@@ -65,6 +65,9 @@ ul.footer-links {
     margin-bottom: 2.5rem;
 }
 
+img.img50 {max-width: 50%}
+img.img75 {max-width: 75%}
+
 @media screen and (max-width: 760px) {
     h1.websitetitle {
         text-align: center;
