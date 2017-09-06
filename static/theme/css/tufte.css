@@ -196,7 +196,7 @@ body {
     padding-right: 0.5em;
     text-align: left;
     vertical-align: top !important; }
-  .wrap .booktabs caption, .wrap caption {
+  .wrap .booktabs caption, .wrap caption, .wrap .caption {
     font-size: 90%;
     text-align: left;
     width: auto;
