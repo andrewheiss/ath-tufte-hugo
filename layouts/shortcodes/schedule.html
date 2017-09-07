@@ -15,7 +15,7 @@
         {{- range . }}
         <tr>
             <td align="right" style="text-align:right">{{ .date }}</td>
-            <td>{{ .title }}</td>
+            <td>{{ .title | markdownify }}</td>
 
             {{- if .reading }}
             <td align="center" style="text-align:center"><a href="{{ .Site.baseurl }}/reading/{{ .reading }}/">
