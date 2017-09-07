@@ -2,6 +2,10 @@ article .sidenote, article .marginnote {
     margin-bottom: 0.3rem;
 }
 
+article .marginnote code, article .sidenote code {
+    font-size: inherit;
+}
+
 article li {
     width: 100%;
 }
