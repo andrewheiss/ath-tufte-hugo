@@ -23,6 +23,10 @@ article ul li ul {
     text-indent: inherit;
 }
 
+a > code {
+    color: inherit;
+}
+
 #TOC li {
     margin-top: 0;
 }
