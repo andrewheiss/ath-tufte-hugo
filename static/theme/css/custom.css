@@ -19,6 +19,10 @@ article ul ul, article ul ol {
     width: 100%;
 }
 
+article ul li ul {
+    text-indent: inherit;
+}
+
 #TOC li {
     margin-top: 0;
 }
