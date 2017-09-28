@@ -3,8 +3,8 @@
 
     <article class="group">
     <h1>{{ .Title }}</h1>
-    
-    <p class="page-date">Due by <strong>midnight</strong> on the day <strong>before</strong> {{ .Date.Format "Monday, January 2, 2006" }}</p>
+
+    <p class="page-date">Due by <strong>11:59 PM</strong> on {{ (.Date.AddDate 0 0 -1).Format "Monday, January 2, 2006" }}</p>
     
     {{ .Content }}
 
