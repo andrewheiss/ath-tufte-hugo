@@ -3,6 +3,7 @@
 <span class="fake-li"><i class="fa fa-university" aria-hidden="true"></i> {{ .Site.Params.instructor.office }}</span><br>
 <span class="fake-li"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:{{ .Site.Params.instructor.email }}"> {{ .Site.Params.instructor.email }}</a></span><br>
 <span class="fake-li"><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/{{ .Site.Params.instructor.twitter }}"> @{{ .Site.Params.instructor.twitter }}</a></span><br>
+<span class="fake-li"><i class="fa fa-users" aria-hidden="true"></i> {{ .Site.Params.course.contactDetails | markdownify}}</span><br>
 <br>
 <span class="fake-header">Course</span><br>
 <span class="fake-li"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{ .Site.Params.course.days }}</span><br>
@@ -10,4 +11,3 @@
 <span class="fake-li"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ .Site.Params.course.time }}</span><br>
 <span class="fake-li"><i class="fa fa-university" aria-hidden="true"></i> {{ .Site.Params.course.location }}</span><br>
 <span class="fake-li"><i class="fa fa-slack" aria-hidden="true"></i> <a href="{{ .Site.Params.course.slack }}">Slack</a></span><br>
-<span class="fake-li"><i class="fa fa-users" aria-hidden="true"></i> {{ .Site.Params.course.contactDetails | markdownify}}</span><br>
