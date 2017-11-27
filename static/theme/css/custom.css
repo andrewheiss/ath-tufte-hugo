@@ -23,6 +23,12 @@ article ul li ul {
     text-indent: inherit;
 }
 
+/* oh hi firefox */
+article figure {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 a > code {
     color: inherit;
 }
