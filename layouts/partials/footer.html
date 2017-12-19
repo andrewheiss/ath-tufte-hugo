@@ -44,7 +44,7 @@
         <div class="credits">
         <span>all content licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</span><br><br>
 
-        <span>content © 2017 <a href="{{ .Site.Params.instructor.url }}">{{ .Site.Params.author | lower }}</a></span><br><br>
+        <span>content © {{ .Site.Params.course.copyrightYear }} <a href="{{ .Site.Params.instructor.url }}">{{ .Site.Params.author | lower }}</a></span><br><br>
 
         {{- if .Site.Params.credits }}
         <span>{{ .Site.Params.credits | markdownify }}</span><br><br>
